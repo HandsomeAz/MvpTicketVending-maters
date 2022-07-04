@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/rv_white_background"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:id="@+id/rl_shift"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/dem_20"
+                android:layout_marginEnd="@dimen/dem_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20"
+                android:id="@+id/tv_departure_time"
+                android:text="09：45"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20"
+                android:textStyle="bold"
+                android:id="@+id/tv_get_onStationName"
+                android:text=""/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20"
+                android:text=" → "/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20"
+                android:id="@+id/tv_takeoffStationName"
+                android:text=""/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dem_20"
+            android:layout_marginEnd="@dimen/dem_20"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_bus_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="100dp"
+                android:layout_weight="2"
+                android:src="@drawable/icon_bus"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_14sp"
+                    android:textColor="@color/hint_color"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14sp"
+                        android:gravity="center_vertical"
+                        android:text="票价："
+                        android:textColor="@color/hint_color"/>
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14sp"
+                        android:gravity="center_vertical"
+                        android:text="全票："
+                        android:textColor="@color/hint_color"/>
+
+                    <TextView
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14sp"
+                        android:id="@+id/tv_person"
+                        android:gravity="center_vertical"
+                        android:text="￥120"
+                        android:textColor="@color/red"/>
+                    <TextView
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14sp"
+                        android:gravity="center_vertical"
+                        android:text="儿童票："
+                        android:textColor="@color/hint_color"/>
+                    <TextView
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14sp"
+                        android:gravity="center_vertical"
+                        android:text="￥60"
+                        android:id="@+id/tv_childPrice"
+                        android:textColor="@color/red"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dem_20">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_ripple_blue"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="购"
+                android:id="@+id/tv_buy"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tv_buy"
+                android:textSize="@dimen/text_20"
+                android:text="￥120"
+                android:textColor="@color/red"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_price"
+                android:layout_marginStart="@dimen/dem_10"
+                android:layout_marginEnd="@dimen/dem_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tv_price"
+                android:textSize="@dimen/text_14sp"
+                android:text="剩10张"
+                android:id="@+id/tv_ticket_num"
+                android:textColor="@color/hint_color"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dem_10"
+                android:layout_marginEnd="@dimen/dem_10"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

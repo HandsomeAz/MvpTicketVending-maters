@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/dem_20"
+        android:layout_marginEnd="@dimen/dem_20"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_adult"
+            android:id="@+id/iv_person_type"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16"
+            android:layout_gravity="center_vertical"
+            android:text="成人票"
+            android:gravity="start"
+            android:layout_weight="3"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_minus"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/iv_minus"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/black"
+                android:text="0"
+                android:background="@drawable/text_unfocus"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|center_vertical"
+                android:id="@+id/tv_ticket_num"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_add"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/iv_add"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

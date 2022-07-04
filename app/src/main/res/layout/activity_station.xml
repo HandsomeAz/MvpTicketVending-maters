@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StationActivity.StationActivity">
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_bar_layout" />
+    <LinearLayout
+        android:id="@+id/ll_city"
+        android:layout_below="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rv_background"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginStart="@dimen/dem_10"
+            android:layout_marginEnd="@dimen/dem_10"
+            android:layout_marginTop="@dimen/dem_10"
+            android:layout_marginBottom="@dimen/dem_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="热门城市"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_16"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_city"
+            android:layout_marginBottom="@dimen/dem_10"
+            android:layout_marginTop="@dimen/dem_10"
+            android:layout_marginStart="@dimen/dem_10"
+            android:layout_marginEnd="@dimen/dem_10"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/ll_city"
+        android:layout_above="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_divide"/>
+
+
+    <com.geo.mvpframe_maters.widget.MyBottomButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

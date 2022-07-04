@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="img" format="reference" />
+    <attr name="textContent" format="string|reference" />
+
+    <attr name="changeEnable" format="boolean" />
+    <declare-styleable name="DateView">
+        <attr name="changeEnable"/>
+    </declare-styleable>
+    <attr name="inputType" format="integer" />
+    <declare-styleable name="ChangeEditText">
+        <attr name="inputType" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SelectView">
+        <attr name="textContent" />
+        <attr name="textHint" format="string" />
+        <attr name="textHintColor" format="color" />
+        <attr name="isClickable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="startAngle" format="integer" />
+        <attr name="radius" format="dimension" />
+        <attr name="ringWidth" format="dimension" />
+        <attr name="centerColor" format="color" />
+        <attr name="ringColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="isTextDisplay" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SelectTicketView">
+        <attr name="img"  />
+        <attr name="textContent" />
+    </declare-styleable>
+</resources>

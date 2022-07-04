@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+anim dialog_sheet_enter
+anim dialog_sheet_exit
+id dialog_modal_cancel
+id dialog_modal_ok
+id dialog_modal_title
+layout dialog_footer_style_1
+layout dialog_footer_style_2
+layout dialog_footer_style_3
+layout dialog_header_style_1
+layout dialog_header_style_2
+layout dialog_header_style_3
+layout dialog_header_style_default
+mipmap dialog_close_icon
+style DialogFadeAnimation
+style DialogSheetAnimation
+style DialogTheme.Base
+style DialogTheme.Fade
+style DialogTheme.Sheet

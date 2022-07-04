@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            />
+        <com.geo.mvpframe_maters.widget.CustomerVideoView
+            android:id="@+id/video_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+        <com.youth.banner.Banner
+            android:id="@+id/bn_home_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:alpha="108"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dem_10"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="点击前往购票"
+        android:textSize="@dimen/text_18"
+        android:id="@+id/bt_go_buy"
+        android:textColor="@color/colorTheme"
+        android:background="@drawable/button_background"/>
+</RelativeLayout>

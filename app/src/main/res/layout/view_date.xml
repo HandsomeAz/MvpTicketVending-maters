@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_minus"
+            android:gravity="start"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentStart="true"
+                android:id="@+id/vd_dateLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/vd_dateLeft"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/text_14sp"
+                android:text="前一天"
+                android:layout_centerVertical="true"
+               />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_date"/>
+            <TextView
+                android:id="@+id/vd_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-9-30"
+                android:textSize="@dimen/text_20"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorTheme"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_add"
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/vd_dateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_next"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/vd_dateRight"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/text_14sp"
+                android:text="后一天"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

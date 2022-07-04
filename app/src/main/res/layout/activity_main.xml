@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_title"
+        android:background="@color/colorTheme">
+        <include
+            layout="@layout/title_bar_layout"/>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@+id/rl_title"
+        android:layout_above="@+id/rl_below"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fl_main_layout"
+        >
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/rl_below"
+        android:background="@color/colorTheme">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical|end"
+            android:textSize="@dimen/text_14sp"
+            android:id="@+id/tv_version"
+            android:layout_marginStart="@dimen/dem_10"
+            android:layout_marginEnd="@dimen/dem_10"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

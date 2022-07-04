@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+id calendar_body_content
+id calendar_body_week
+layout calendar_body

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_style"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:id="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_tips"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_tips"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_tips"
+            android:textSize="@dimen/text_size24"
+            android:layout_marginStart="10dp"
+            android:textColor="#8a8a8a"
+            android:text="提示" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_content"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_head">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="xxxx"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rlyt_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:text="取 消"
+            android:textSize="@dimen/text_16"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/black"
+            android:background="@drawable/button_background"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/item_background"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_height="55dp"
+            android:text="确 认"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/text_16"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTheme"
+            android:background="@drawable/button_background" />
+    </LinearLayout>
+
+</RelativeLayout>
